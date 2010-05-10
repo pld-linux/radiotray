@@ -1,0 +1,13 @@
+--- radiotray-0.5.1/src/StateMediator.py~	2010-04-11 17:20:24.000000000 +0200
++++ radiotray-0.5.1/src/StateMediator.py	2010-05-10 14:22:27.402194827 +0200
+@@ -81,8 +81,8 @@
+             self.currentMetaData = newMetadata
+             self.systray.updateRadioMetadata(newMetadata)
+ 
+-            if self.currentMetaData:
+-                self.notification.notify("%s - %s" % (APPNAME , self.currentRadio), self.currentMetaData)
++#            if self.currentMetaData:
++#                self.notification.notify("%s - %s" % (APPNAME , self.currentRadio), self.currentMetaData)
+ 
+     def getCurrentRadio(self):
+         return self.currentRadio
