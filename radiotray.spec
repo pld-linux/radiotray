@@ -20,6 +20,7 @@ Requires:	python-libs
 Requires:	python-lxml >= 2.1.5
 Requires:	python-modules
 Requires:	python-pygobject >= 2.18
+Requires:	python-pygtk-glade
 Requires:	python-pygtk-gtk
 Requires:	python-gstreamer
 Requires:	python-pyinotify >= 0.8.6
