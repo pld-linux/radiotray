@@ -8,19 +8,20 @@ Source0:	http://dl.sourceforge.net/radiotray/%{name}-%{version}.tar.gz
 # Source0-md5:	9811f8145108784e8e515b66fdaa6f05
 Patch0:		%{name}-no-song-notify.patch
 URL:		http://radiotray.sourceforge.net/
+BuildRequires:	gettext-devel
 BuildRequires:	python-devel
 BuildRequires:	python-lxml >= 2.1.5
 BuildRequires:	python-pyinotify >= 0.8.6
 BuildRequires:	python-pyxdg
-BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.219
+Requires:	python-gstreamer
 Requires:	python-libs
 Requires:	python-lxml >= 2.1.5
 Requires:	python-modules
 Requires:	python-pygobject >= 2.18
 Requires:	python-pygtk-glade
 Requires:	python-pygtk-gtk
-Requires:	python-gstreamer
 Requires:	python-pyinotify >= 0.8.6
 Requires:	python-pynotify
 Requires:	python-pyxdg
@@ -30,11 +31,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Radio Tray is an online radio streaming player that runs on a Linux
 system tray. Its goal is to have the minimum interface possible,
-making it very straightforward to use.
-Radio Tray is not a full featured music player, there are plenty of
-excellent music players already. However, there was a need
-for a simple application with minimal interface just to listen to
-online radios. And that's the sole purpose of Radio Tray.
+making it very straightforward to use. Radio Tray is not a full
+featured music player, there are plenty of excellent music players
+already. However, there was a need for a simple application with
+minimal interface just to listen to online radios. And that's the sole
+purpose of Radio Tray.
 
 %prep
 %setup -q
