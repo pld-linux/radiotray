@@ -1,12 +1,11 @@
 Summary:	Radio Tray is an online radio streaming player
 Name:		radiotray
-Version:	0.5.1
-Release:	2
+Version:	0.6
+Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://dl.sourceforge.net/radiotray/%{name}-%{version}.tar.gz
-# Source0-md5:	9811f8145108784e8e515b66fdaa6f05
-Patch0:		%{name}-no-song-notify.patch
+# Source0-md5:	7b08dcc96ff2951d4be34b6d927a22eb
 URL:		http://radiotray.sourceforge.net/
 BuildRequires:	gettext-devel
 BuildRequires:	python-devel
@@ -39,7 +38,6 @@ purpose of Radio Tray.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__python} setup.py build
