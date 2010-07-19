@@ -1,7 +1,7 @@
 Summary:	Radio Tray is an online radio streaming player
 Name:		radiotray
 Version:	0.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://dl.sourceforge.net/radiotray/%{name}-%{version}.tar.gz
