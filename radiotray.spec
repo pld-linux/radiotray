@@ -14,6 +14,7 @@ BuildRequires:	python-pyinotify >= 0.8.6
 BuildRequires:	python-pyxdg
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
+Requires:	gstreamer-soup
 Requires:	python-dbus >= 0.83
 Requires:	python-gstreamer
 Requires:	python-libs
