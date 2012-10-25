@@ -28,6 +28,7 @@ Requires:	python-pyinotify >= 0.8.6
 Requires:	python-pynotify
 Requires:	python-pyxdg
 Suggests:	gstreamer0.10-aac
+Suggests:	gstreamer0.10-audio-formats
 Suggests:	gstreamer0.10-lame
 Suggests:	gstreamer0.10-mad
 BuildArch:	noarch
