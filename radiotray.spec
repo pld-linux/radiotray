@@ -1,7 +1,7 @@
 Summary:	Radio Tray is an online radio streaming player
 Name:		radiotray
 Version:	0.7.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://download.sourceforge.net/radiotray/%{name}-%{version}.tar.gz
@@ -29,6 +29,7 @@ Requires:	python-pynotify
 Requires:	python-pyxdg
 Suggests:	gstreamer0.10-aac
 Suggests:	gstreamer0.10-lame
+Suggests:	gstreamer0.10-mad
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
