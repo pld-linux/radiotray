@@ -4,7 +4,7 @@ Version:	0.7.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Source0:	http://dl.sourceforge.net/radiotray/%{name}-%{version}.tar.gz
+Source0:	http://download.sourceforge.net/radiotray/%{name}-%{version}.tar.gz
 # Source0-md5:	274efddcf5183a4f5cb193f8c417a45c
 URL:		http://radiotray.sourceforge.net/
 BuildRequires:	gettext-devel
