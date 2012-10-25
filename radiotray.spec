@@ -1,11 +1,11 @@
 Summary:	Radio Tray is an online radio streaming player
 Name:		radiotray
-Version:	0.6.3
+Version:	0.7.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://dl.sourceforge.net/radiotray/%{name}-%{version}.tar.gz
-# Source0-md5:	b88cf448c030d576d0ea4f65743912b4
+# Source0-md5:	274efddcf5183a4f5cb193f8c417a45c
 URL:		http://radiotray.sourceforge.net/
 BuildRequires:	gettext-devel
 BuildRequires:	python-devel
@@ -14,7 +14,8 @@ BuildRequires:	python-pyinotify >= 0.8.6
 BuildRequires:	python-pyxdg
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
-Requires:	gstreamer-soup
+Requires:	gstreamer0.10-audiosink
+Requires:	gstreamer0.10-soup
 Requires:	python-dbus >= 0.83
 Requires:	python-gstreamer
 Requires:	python-libs
@@ -26,6 +27,8 @@ Requires:	python-pygtk-gtk
 Requires:	python-pyinotify >= 0.8.6
 Requires:	python-pynotify
 Requires:	python-pyxdg
+Suggests:	gstreamer0.10-aac
+Suggests:	gstreamer0.10-lame
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -68,7 +71,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/%{name}.desktop
 %{_pixmapsdir}/%{name}.png
 %dir %{py_sitescriptdir}/radiotray
+%dir %{py_sitescriptdir}/radiotray/events
 %dir %{py_sitescriptdir}/radiotray/lib
 %{py_sitescriptdir}/radiotray/*.py[co]
+%{py_sitescriptdir}/radiotray/events/*.py[co]
 %{py_sitescriptdir}/radiotray/lib/*.py[co]
 %{py_sitescriptdir}/radiotray-*.egg-info
