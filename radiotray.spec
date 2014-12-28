@@ -7,7 +7,7 @@ Group:		X11/Applications/Multimedia
 Source0:	http://download.sourceforge.net/radiotray/%{name}-%{version}.tar.gz
 # Source0-md5:	274efddcf5183a4f5cb193f8c417a45c
 URL:		http://radiotray.sourceforge.net/
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	python-devel
 BuildRequires:	python-lxml >= 2.1.5
 BuildRequires:	python-pyinotify >= 0.8.6
